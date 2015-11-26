@@ -4,23 +4,30 @@
 {
     //Required. Inputs the module expects.
     "inputs": [
-        //e.g.
-        /*
-        {
-            "id": "from",
-            "title":"From"
-        }
-        */
+      {
+        "id": "screen_name",
+        "title":"The screen name of the user for whom to unfollow"
+      },
+      {
+        "id": "user_id",
+        "title":"The ID of the user for whom to unfollow"
+      }
     ],
     //Required. Outputs the module emits.
     "outputs": [
-      //e.g.
-      /*
         {
-            "id": "from",
-            "title":"From"
+            "id": "screen_name",
+            "title":"The screen name of the user for whom to unfollow"
+        },
+        {
+            "id": "follow_request_sent",
+            "title":"follow_request_sent"
+        },
+        {
+            "id": "following",
+            "title":"following"
         }
-      */
     ],
-    "title": "Twitter Unfollow" /* Required.A display name for the module */
+    /* Required.A display name for the module */
+    "title": "Twitter Unfollow"
 }
